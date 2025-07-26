@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Import Poppins font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>form</title>
+
+</head>
+<body>
+  <div id="multiplestepform">
+  <!-- Form html -->
+  <form action="/submit" method="post">
+    <!-- Container for sign-in form -->
+    <fieldset class="singupContainer">
+      <h1 class="title">Sign up</h1>
+
+       <!-- Step 1: name and surname inputs -->
+      <div class="step" id="step1">
+      <label for="name">name</label>
+      <input type="text" placeholder=" type your name" name="name" autocomplete="off" required minlength="3">
+
+      <label for="surname">surname</label>
+      <input type="text" placeholder="type your surname" name="surname" autocomplete="off" required minlength="3">
+
+       <!-- Button to proceed to next step -->
+      <button type="button" class="submit1" >sing up</button>
+      </div>
+
+      <!-- Step 2: email and password inputs, initially hidden -->
+      <div class="step" id="step2">
+      <label for="email" >email</label>
+      <input type="email" name="email" placeholder="email" autocomplete="off" required>
+
+      <label for="password">password</label>
+      <input type="password" name="password" placeholder="password" required>
+
+      <!-- Button to submit the full form -->
+      <button type="submit" class="submit2">sing up</button>
+  </div>
+       <!-- Link to switch to login form -->
+     <p class="change-form">Have already an account?<br>type here for <a id="change" href="login.html">login!</a></p>
+    </fieldset>
+  </form>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

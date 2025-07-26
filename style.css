@@ -1,0 +1,179 @@
+/* Reset margins, padding and box-sizing for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+/* Body styling: dark gradient background, flex center, white text */
+body{
+
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Container holding the forms side by side */
+#multiplestepform{
+
+    max-width:100%;
+    display: flex;
+    justify-content: space-between;
+    border:solid 1px rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 1s ease;
+}
+
+/* Sign up form container */
+.singupContainer{
+    
+    flex: 1;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    padding: 1.2rem 1.5rem 0.5rem;
+    border: none;
+   
+
+}
+
+/* Login form container, similar to sign up */
+.loginContainer{
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 1.5rem 0.5rem;
+    border: none;
+}
+
+/* Style for paragraph inside login container */
+.loginContainer p{
+
+    text-align:center;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* Style for paragraph inside sign up container */
+.singupContainer p{
+
+    text-align:center;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* Title style, centered with margin */
+.title{
+    text-align: center;
+    margin: 0.5rem;
+}
+
+/* Step containers layout */
+.step{
+    
+    display: flex;
+    flex-direction:column;
+}
+
+/* Step 2 initially hidden */
+#step2{
+    display:none;
+}
+
+/* Basic margin and transparent background for form elements */
+label, input, button, p{
+    margin: 0.2rem 0rem;
+    background: transparent;
+}
+
+/* Input styling */
+input{
+    padding: 0.5rem;
+    border:none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder text color */
+input::placeholder{
+
+     color: rgba(255, 255, 255, 0.6);
+}
+
+/* Input focus effect */
+input:focus{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px #00ffe7;
+}
+
+/* Button style */
+button{
+
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    align-self: center;
+    background: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    transition: 0.3s ease;
+
+}
+
+/* Button hover effect */
+button:hover{
+    background: #3b82f6;
+    color: #fff;
+    box-shadow: 0 0 15px #3b82f6, 0 0 40px #3b82f6;
+    transform: scale(1.1);
+}
+
+/* Button active (clicked) effect */
+button:active{
+    transform: scale(0.9);
+}
+
+/* Style for login change link */
+#change{
+    border:none;
+    background: transparent;
+    font-weight: 100;
+    color: #3b82f6;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for login change link */
+#change:hover{
+    color: #5c9bff;
+}
+
+/* Extra styling for login button */
+#bottoneLogin {
+
+  align-self: center;
+  background: transparent;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  transition: 0.3s ease;
+}
+/* Hover effect for login button */
+#bottoneLogin:hover {
+  background: #3b82f6;
+  color: #fff;
+  box-shadow: 0 0 15px #3b82f6, 0 0 40px #3b82f6;
+}

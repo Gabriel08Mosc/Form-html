@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+     <div id="multiplestepform">
+    <form action="/submit" method="post">
+
+     <!-- Container for login form -->
+    <fieldset class="loginContainer">
+    <div class="step">
+      <h1 class="title">Login</h1>
+
+      <!-- Email input -->
+      <label for="email">email</label>
+      <input type="email" name="email" placeholder="email" autocomplete="off" required>
+
+      <!-- Password input -->
+      <label for="password">password</label>
+      <input type="password" name="password" placeholder="password" required minlength="8">
+
+      <!-- Submit button -->
+      <button type="submit">submit</button>
+      <!-- Prompt to switch to sign in -->
+      <p>Don't have an account?<br>type here for <a id="change" href="index.html">sing in!</a></p>
+      </div>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>
